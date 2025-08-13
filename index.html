@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Logo with Social Links</title>
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('assets/background.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 60px; /* Increased from 30px */
+            border-radius: 15px;
+            max-width: 500px; /* Added so it’s wider */
+            width: 100%;
+        }
+        .logo {
+            max-width: 250px; /* Increased logo size */
+            margin-bottom: 30px;
+        }
+        .social-links {
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
+        .social-links a {
+            margin: 0 15px;
+            color: white;
+            font-size: 36px; /* Increased icon size */
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #ffd700;
+        }
+        .buttons {
+            margin-top: 30px;
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 15px 30px; /* Bigger buttons */
+            margin: 15px;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px; /* Bigger text */
+            transition: background 0.3s ease;
+        }
+        .btn-suggestion {
+            background: #1E8449;
+        }
+        .btn-suggestion:hover {
+            background: #145A32;
+        }
+        .btn-complain {
+            background: #A93226;
+        }
+        .btn-complain:hover {
+            background: #78221B;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <img src="assets/logo2.png" alt="Logo" class="logo">
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://t.me" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <a href="https://form.jotform.com/252236496703056" class="btn-complain" target="_blank">اقتراحات</a>
+            <a href="https://form.jotform.com/252236496703056" class="btn-suggestion" target="_blank">شكاوي</a>
+        </div>
+    </div>
+</body>
+</html>
+
